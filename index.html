@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Calculator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Tax Calculator</h1>
+    <form id="taxForm">
+      <div class="form-group">
+        <label for="grossIncome">Enter Your Gross Annual Income (in Rupees):</label>
+        <input type="number" class="form-control" id="grossIncome" required>
+        <div class="error-icon" id="grossIncomeError"></div>
+      </div>
+      <div class="form-group">
+        <label for="extraIncome">Enter Your Extra Income (in Rupees):</label>
+        <input type="number" class="form-control" id="extraIncome">
+        <div class="error-icon" id="extraIncomeError"></div>
+      </div>
+      <div class="form-group">
+        <label for="deductions">Enter Deductions (in Rupees):</label>
+        <input type="number" class="form-control" id="deductions">
+        <div class="error-icon" id="deductionsError"></div>
+      </div>
+      <div class="form-group">
+        <label for="age">Enter Your Age:</label>
+        <select class="form-control" id="age" required>
+          <option value="" disabled selected>Select Age Group</option>
+          <option value="<40">&lt;40</option>
+          <option value=">=40&<60">&ge;40 &lt;60</option>
+          <option value=">=60">&ge;60</option>
+        </select>
+        <div class="error-icon" id="ageError"></div>
+      </div>
+      <button type="submit" class="btn btn-primary">Calculate Tax</button>
+    </form>
+  </div>
+
+  <div class="modal" id="resultModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Tax Calculation Result</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" id="modalBody">
+          <!-- Tax calculation result will be displayed here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

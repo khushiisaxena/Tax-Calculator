@@ -1,0 +1,30 @@
+.error-icon {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .error-icon::before {
+    content: "!";
+    color: red;
+  }
+  
+  .error-tooltip {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    background-color: #ffdddd;
+    color: #ff0000;
+    padding: 5px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+  .form-group {
+    position: relative;
+  }
+  
