@@ -1,5 +1,7 @@
 # Tax-Calculator
 
+https://khushiisaxena.github.io/Tax-Calculator/
+
 This is a web-based tax calculator application developed to help users calculate their income tax based on their income and deductions. The application uses a simple and intuitive user interface to input the necessary details and provides the calculated tax amount.
 
 ## Features
